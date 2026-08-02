@@ -1,7 +1,24 @@
 aid: thalamed
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/thalamed.png
 name: Thalamed
-description: Thalamed is a company surfaced as a portfolio company of point-nine and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Thalamed is a Berlin-based medical device procurement marketplace, founded in 2014,
+  that connects healthcare providers such as clinics, private practices, and outpatient care facilities
+  with suppliers of medical equipment including ultrasound and x-ray devices, sterilization and
+  disinfection systems, and medical lasers. Customers describe the device they need and Thalamed's
+  team evaluates the request and contacts the most suitable providers to deliver matching quotes,
+  simplifying comparison and purchasing. The company is a Point Nine and RTAventures portfolio company.
+  No public developer API, documentation, or integration surface is published as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/thalamed/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Healthcare
+- Medical Devices
+- Marketplace
+- Procurement
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/thalamed-domain-security.yml
 - type: Website
   url: http://www.thalamed.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
